@@ -1,0 +1,26 @@
+body {
+  background-color: green;
+}
+
+#content{
+  background-color: blue;
+  width: 20%;
+  height: 350px;
+  float:left
+}
+
+#content2{
+  background-color: red;
+  width: 20%;
+  float:right;
+  right:50px;
+  height:350px;
+}
+
+#content3{
+  background-color: yellow;
+  width: 20%;
+  height: 350px;
+  margin:0 auto;
+  top:100px;
+}

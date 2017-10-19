@@ -1,0 +1,40 @@
+#wrapper{
+background-color: green;
+height: 800px;
+width: 500px;
+margin:0 auto;
+}
+
+body{
+  background-color: green;
+}
+#header{
+background-color: red;
+text-align: center;
+height: 75px;
+left:100px;
+}
+
+#content{
+background-color: pink;
+height: 80px;
+float: left;
+width: 25%
+}
+
+#content2{
+  background-color: orange;
+  float: left;
+  width:75%;
+  height: 80px;
+}
+
+#content3{
+  background-color: blue;
+  height: 675px;
+}
+
+#footer{
+  background-color: yellow;
+  height: 60px;
+}

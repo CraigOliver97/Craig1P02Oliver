@@ -1,0 +1,45 @@
+#header{
+  text-align: center;
+  color: purple;
+  background-color: orange;
+  font-size: 38px;
+  font-family: cursive;
+  text-transform: uppercase;
+}
+
+#wrapper{
+  background-color: white;
+}
+
+body{
+  background-color: purple;
+}
+
+.accolades{
+  position:fixed;
+  background-color: orange;
+  top: 40px;
+  color: purple;
+}
+
+.avg{
+  position:relative;
+  left:1000px;
+  background-color: purple;
+  color:orange;
+}
+
+.headline{
+  position:absolute;
+  left: 500px;
+  top: 175px;
+  background-color: orange;
+}
+
+.p1, .p2{
+  color: purple;
+}
+
+.marked p{
+  color:orange;
+}

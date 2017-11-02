@@ -1,0 +1,39 @@
+.content{
+  text-align: center;
+  padding-top: 150px;
+
+}
+
+.box1{
+  border-style: dotted;
+  border-color: purple;
+  height: 200px;
+  Width: 1420px;
+}
+
+.smallgreentext{
+  text-align: center;
+  color: green;
+  font-size: 8px;
+}
+
+.weirdorangeredtext{
+  color: orange;
+  font-size: 35px;
+}
+
+.ss{
+  color: red;
+  vertical-align: super;
+}
+
+.spy{
+  color: purple;
+  text-align: right;
+  padding-top: 10px;
+  font-size: 6px;
+}
+
+.ty{
+  color: yellow;
+}

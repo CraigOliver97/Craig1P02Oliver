@@ -1,97 +1,175 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+.demo{
+  color: red;
+}
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+#wrapper{
+  background-color: red;
+  position: fixed;
+  width: 100%;
+}
 
-<head>
-	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-	<title>Basic Page with CSS + Javascript</title>
-	<link href="FinalProject.css" rel="stylesheet" type="text/css" />
-	    <script type="text/javascript" src="FinalProject.js"></script>
-</head>
+#clockwrapper{
+  background-color: red;
+}
 
-<body>
+#header{
+background-color: lime;
+text-align: center;
+height: 120px;
+}
 
-	<div id="snow">
+.toptext{
+  color: lime;
+  text-align: center;
+}
 
-	<div id="wrapper">
-		<p class="toptext">Deck The Halls</p>
-	</div>
+h1{
+  text-align: center;
+  font-size: 100px;
+  color: red;
+}
+
+h2{
+  text-align: center;
+  font-size: 20px;
+  color: red;
+}
+
+.content{
+  font-size: 20px;
+  color: red;
+  text-align: center;
+}
+
+.tmoc{
+  text-align: center;
+  color: black;
+}
+
+#box1{
+  background-color: white;
+  border-style: dotted;
+  border-color: lime;
+  height: 280px;
+  Width: 420px;
+  position: relative;
+  left: 10%;
+  top: 50px;
+  color: black;
+}
+
+#box2{
+  background-color: white;
+  border-style: dotted;
+  border-color: lime;
+  height: 280px;
+  Width: 420px;
+  position: relative;
+  float: right;
+  right: 10%;
+  bottom: 231px;
+  color: black;
+}
+
+#box3{
+  background-color: white;
+  border-style: dotted;
+  border-color: lime;
+  height: 70px;
+  Width: 100px;
+  position: relative;
+  right: 390px;
+  bottom: 240px;
+}
+
+#box4{
+  background-color: white;
+  border-style: dotted;
+  border-color: lime;
+  height: 70px;
+  Width: 100px;
+  position: relative;
+  right: 390px;
+  bottom: 200px;
+}
+
+#centertrivia{
+  text-align: center;
+  position: relative;
+  top: 70px;
+}
+
+#footer{
+  background-color: white;
+  height: 300px;
+  position: relative;
+  text-align: center;
+  right: 550px;
+  color: red;
 
 
 
+}
 
+#clockfooter{
+  background-color: white;
+  height: 30px;
+  position: relative;
+  top: 200px;
+}
 
-	<div id="header">
-		<h1>Merry Christmas </h1>
-	</div>
+.gt{
+  color: green;
+}
 
+.rt{
+  color:red;
+}
 
+#demo{
+  text-align: center;
+  font-size: 60px;
+  top: 160px;
+  color: red;
+  position: relative;
+}
 
-	<div id="box1">
-		<p class="content"> Top 10 Christmas Movies of All Time </p>
-		<ol>
-			<li><a href="https://www.rottentomatoes.com/m/1010792_its_a_wonderful_life">It's a Wonderful Life (1946)</a></li>
-			<li><a href="https://www.rottentomatoes.com/m/1013970_miracle_on_34th_street">Miracle on 34th Street (1947)</a></li>
-			<li><a href="https://www.rottentomatoes.com/m/holiday_inn/">Holiday Inn (1942)</a></li>
-			<li><a href="https://www.rottentomatoes.com/m/1006223_how_the_grinch_stole_christmas">How the Grinch Stole Christmas (1967)</a></li>
-			<li><a href="https://www.rottentomatoes.com/m/nightmare_before_christmas/">The Nightmare Before Christmas (1993)</a></li>
-			<li><a href="https://www.rottentomatoes.com/m/arthur_christmas/">Arthur Christmas (2011)</a></li>
-			<li><a href="https://www.rottentomatoes.com/m/1004151_christmas_story">A Christmas Story (1983)</a></li>
-			<li><a href="https://www.rottentomatoes.com/m/charlie_brown_christmas/">A Charlie Brown Christmas (1965)</a></li>
-			<li><a href="https://www.rottentomatoes.com/m/1017962_rudolph_the_rednosed_reindeer">Rudolph The Red-Nosed Reinder (1964)</a></li>
-			<li><a href="https://www.rottentomatoes.com/m/elf/">Elf (2003)</a></li>
+/*Snow Effect taken from https://codepen.io/NickyCDK/pen/AIonk*/
 
+#snow{
+	background: #c0c0c0;
+	font-family: Androgyne;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
 
-
-
-
-		</ol>
-</div>
-
-	<div id="box2">
-		<p class="content"> Top 10 Christmas Songs of All Time  </p>
-		<ol>
-<li>White Christmas</li>
-<li>Have Yourself a Merry Christmas</li>
-<li>O Holy Night</li>
-<li>Fairytale of New York</li>
-<li>I'll Be Home for Christmas</li>
-<li>Santa Claus is Coming to Town</li>
-<li>We Three Kings</li>
-<li>Christmas Wrapping</li>
-<li>It Came Upon a Midnight Clear</li>
-<li>You're a Mean One, Mr. Grinch</li>
-</ol>
-
-
-<div id="box3">
-
-	<a href="FinalProjectClockPage.html"> Countdown to Christmas </a>
-
-</div>
-	<div id="box4">
-	<a href="FinalProjectTriviaPage.html"> Christmas Trivia </a>
-</div>
-
-<div id="footer">
-	<h1>The Origins of Christmas</h1>
-
-	<p class="tmoc">Christmas is an annual festival commemorating the birth of Jesus Christ, observed most commonly on December 25 as a religious and cultural celebration among billions of people around the world. A feast central to the Christian liturgical year, it is preceded by the season of Advent or the Nativity Fast and initiates the season of Christmastide, which historically in the West lasts twelve days and culminates on Twelfth Night; in some traditions, Christmastide includes an Octave. Christmas Day is a public holiday in many of the world's nations, is celebrated religiously by a majority of Christians, as well as culturally by many non-Christians, and forms an integral part of the holiday season. In several countries, celebrating Christmas Eve has the main focus rather than Christmas Day.</p>
-
-<p class="tmoc">Although the month and date of Jesus' birth are unknown, by the early-to-mid fourth century the Western Christian Church had placed Christmas on December 25,[20] a date that was later adopted in the East. Today, most Christians celebrate on December 25 in the Gregorian calendar, which has been adopted almost universally in the civil calendars used in countries throughout the world. However, some Eastern Christian Churches celebrate Christmas on December 25 of the older Julian calendar, which currently corresponds to January 7 in the Gregorian calendar, the day after the Western Christian Church celebrates the Epiphany. This is not a disagreement over the date of Christmas as such, but rather a preference of which calendar should be used to determine the day that is December 25.</p>
-
-<p class="tmoc"> Although it is not known why December 25 became a date of celebration, there are several factors that may have influenced the choice. December 25 was the date the Romans marked as the winter solstice, the shortest and darkest day of the year, and the first day in which the days would begin to elongate and the Sun would have a longer presence in the sky. Jesus was identified with the Sun based on an Old Testament verse, and the date is exactly nine months following Annunciation, when the conception of Jesus is celebrated, which is one theory on what may have influenced the timing of the Christmas holiday. Also, Ancient Romans had a series of pagan festivals near the end of the year, and Christmas may have been scheduled at this time to appropriate, or compete with, one or more of these festivals. Some scholars disagree with this latter interpretation and state that the Roman Emperor Aurelian placed a pagan celebration on December 25 in order to compete with the growing rate of the Christian Church, which had already been celebrating Christmas on that date.</p>
-
-<p class="tmoc"> The celebratory customs associated in various countries with Christmas have a mix of pre-Christian, Christian, and secular themes and origins. Popular modern customs of the holiday include gift giving, completing an Advent calendar or Advent wreath, Christmas music and caroling, lighting a Christingle, viewing a Nativity play, an exchange of Christmas cards, church services, a special meal, and the display of various Christmas decorations, including Christmas trees, Christmas lights, nativity scenes, garlands, wreaths, mistletoe, and holly. In addition, several closely related and often interchangeable figures, known as Santa Claus, Father Christmas, Saint Nicholas, and Christkind, are associated with bringing gifts to children during the Christmas season and have their own body of traditions and lore. Because gift-giving and many other aspects of the Christmas festival involve heightened economic activity, the holiday has become a significant event and a key sales period for retailers and businesses. The economic impact of Christmas has grown steadily over the past few centuries in many regions of the world. </p>
-
-SOURCE - https://en.wikipedia.org/wiki/Christmas
-</div>
-
-
-
-
-</div>
-
-</body>
-
-</html>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
